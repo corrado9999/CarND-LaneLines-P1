@@ -1,4 +1,4 @@
-# CarND-P1
+# CarND-LaneLines-P1
 
 This is the submission of the first project of the Udacity "Self-Driving Car Engineer Nanodegree"
 course.
