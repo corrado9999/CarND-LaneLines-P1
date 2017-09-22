@@ -69,7 +69,7 @@ the clip has been resampled before the pipeline.
 ### 2. Identify potential shortcomings with your current pipeline
 
 Detected lines flicker. This is mainly due to the broken lines that keep entering and exiting the
-ROI. But even the unbroken line slightly flicker. This is connected to the second issue.
+ROI. But even the unbroken lines slightly flicker. This is connected to the second issue.
 The probabilistic Hough transform has too many parameters and it is hard to understand the effect of
 small changes in them. For example, one would expect that by increasing rho it would be less
 sensitive to imperfections in the edge detection step, and hence find more lines. But this is not
@@ -78,6 +78,8 @@ In these cases the pipeline still works thanks to the line fitting step, but all
 give the sensation of a very robust pipeline. This has become quite evidente in the challenge: more
 irregular asphalt and more significant bends required to change some parameters, and the new set
 does not work equally well with the previous images and videos.
+An issue of a different kind could be the processing time: on a "Intel(R) Core(TM) i7-4500U CPU @
+1.80GHz" the frame rate is 5-8, while the videos actual rate is 25fps.
 
 
 ### 3. Suggest possible improvements to your pipeline
